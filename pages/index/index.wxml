@@ -1,0 +1,13 @@
+
+
+<!-- <view>当前金额为{{money}}元</view>
+
+<button bindtap="Recharge">充值</button>
+
+
+
+<button bindtap="getData">更新数据</button> -->
+
+<!-- <button bindtap="payMoney">关门</button> -->
+
+<tabbar tabbar="{{ tabbar }}"></tabbar>

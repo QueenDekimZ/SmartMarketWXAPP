@@ -1,0 +1,2 @@
+<view>您的余额为{{money}}元</view>
+<!-- <button bindtap="getData">更新数据</button> -->

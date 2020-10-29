@@ -1,0 +1,3 @@
+<!--pages/open.wxml-->
+<!-- <text>pages/open.wxml</text> -->
+<button catchtap="payMoney" class="thisbtn">关门</button>

@@ -1,0 +1,15 @@
+
+  <view class='row'>
+        <view class='info'>
+               <input type='text' class= 'info-input' bindinput="handleNewChanges" placeholder="请输入你的支付密码" />
+         </view>
+ 
+ </view>
+  <view class='row'>
+        <view class='info'>
+               <input  type='text' class= 'info-input' bindinput="handleNewChangesAgain" placeholder="请再次输入你的支付密码" />
+         </view>
+ 
+ </view>
+ <button class='submit' bindtap='submit'>注册</button>
+ 

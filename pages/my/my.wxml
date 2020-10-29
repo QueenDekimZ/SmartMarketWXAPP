@@ -1,0 +1,80 @@
+<!-- <view class="container"> -->
+
+<!-- 用户 openid -->
+<!-- <view class="userinfo">
+  <button 
+    open-type="getUserInfo" 
+    bindgetuserinfo="onGetUserInfo"
+    class="userinfo-avatar"
+    style="background-image: url({{avatarUrl}})"
+    size="default"
+  ></button>
+  <view class="userinfo-nickname-wrapper">
+  </view>
+</view>
+-->
+
+<view class="bg">
+  <view class="head">
+    <view class="headIcon">
+      <image src="{{userInfo.avatarUrl}}" style="width:70px;height:70px;"></image>
+    </view>
+    <view class="login">
+      {{userInfo.nickName}}
+    </view>
+  </view>
+  <button class="{{showButton?'button1':'button2'}}" 
+  open-type="getUserInfo" wx:if="{{hasUserInfo}}" 
+  bindtap="change" bindgetuserinfo="doAuthorization"> 微信登录 </button>
+</view>
+
+
+
+<view class="line"></view>
+<navigator url="../ShowMoney/ShowMoney" open-type="navigate" hover-class="other-navigator-hover">
+<view class='item'>
+  <view class="title">余额:</view>
+
+
+  <view class="detail2">
+    <view>{{money}}元</view>
+  </view>
+</view>
+</navigator>
+<navigator url="../SelectCharge/SelectCharge" open-type="navigate" hover-class="other-navigator-hover">
+  <view class="line"></view>
+<view class='item'>
+  <view class="title">充值</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+</navigator>
+
+<view class="line"></view>
+<view class="item">
+  <view class="title">我的订单</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item">
+  <view class="title">意见反馈</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item">
+  <view class="title">设置</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="hr"></view>
+
+
+<!-- </view>  -->
+
+<tabbar tabbar="{{ tabbar }}"></tabbar>
